@@ -1,10 +1,9 @@
 import SwiftUI
 
+///  A view that displays a reusable customizable plus button with a system image.
 struct PlusButtonView: View {
-    // MARK: - Private interface
-    private let imageName = "plus.circle"
-    
     // MARK: - Internal interface
+    /// The action to perform when the button is tapped.
     var action: () -> Void
     
     var body: some View {
@@ -15,6 +14,9 @@ struct PlusButtonView: View {
                 .shadow(color: .pastelGreen, radius: 5, x: 5, y: 2)
         }
     }
+    
+    // MARK: - Private interface
+    private let imageName = "plus.circle"
 }
 
 #Preview {
