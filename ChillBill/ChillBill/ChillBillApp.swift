@@ -4,7 +4,7 @@ import SwiftUI
 struct ChillBillApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainScreenView()
         }
     }
 }
