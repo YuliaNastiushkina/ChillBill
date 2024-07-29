@@ -12,6 +12,7 @@
 		BA3A8DCE2C580177005D1BCB /* DummyExpensesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3A8DCD2C580177005D1BCB /* DummyExpensesListViewModel.swift */; };
 		BA3A8DD12C582964005D1BCB /* ExpensesRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3A8DD02C582964005D1BCB /* ExpensesRowView.swift */; };
 		BA3A8DD52C582B8D005D1BCB /* ExpenseSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3A8DD42C582B8D005D1BCB /* ExpenseSectionView.swift */; };
+		BA3A8DDB2C5832FA005D1BCB /* ExpensesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3A8DDA2C5832FA005D1BCB /* ExpensesListView.swift */; };
 		BAABA2D32C501C3F007CBBD7 /* ChillBillApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAABA2D22C501C3F007CBBD7 /* ChillBillApp.swift */; };
 		BAABA2D52C501C3F007CBBD7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAABA2D42C501C3F007CBBD7 /* ContentView.swift */; };
 		BAABA2D72C501C40007CBBD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAABA2D62C501C40007CBBD7 /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 		BA3A8DCD2C580177005D1BCB /* DummyExpensesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyExpensesListViewModel.swift; sourceTree = "<group>"; };
 		BA3A8DD02C582964005D1BCB /* ExpensesRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExpensesRowView.swift; path = ../../../../../../../Documents/ExpensesRowView.swift; sourceTree = "<group>"; };
 		BA3A8DD42C582B8D005D1BCB /* ExpenseSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExpenseSectionView.swift; path = ../../../../../../../Documents/ExpenseSectionView.swift; sourceTree = "<group>"; };
+		BA3A8DDA2C5832FA005D1BCB /* ExpensesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExpensesListView.swift; path = ../../../../../../../Documents/ExpensesListView.swift; sourceTree = "<group>"; };
 		BAABA2CF2C501C3F007CBBD7 /* ChillBill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChillBill.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAABA2D22C501C3F007CBBD7 /* ChillBillApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChillBillApp.swift; sourceTree = "<group>"; };
 		BAABA2D42C501C3F007CBBD7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 			children = (
 				BA3A8DD02C582964005D1BCB /* ExpensesRowView.swift */,
 				BA3A8DD42C582B8D005D1BCB /* ExpenseSectionView.swift */,
+				BA3A8DDA2C5832FA005D1BCB /* ExpensesListView.swift */,
 			);
 			path = ExpensesView;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 				BA3A8DD12C582964005D1BCB /* ExpensesRowView.swift in Sources */,
 				BA3A8DCC2C57FFAC005D1BCB /* DummySectionViewModel.swift in Sources */,
 				BAABA2E92C52CEFB007CBBD7 /* CustomTabView.swift in Sources */,
+				BA3A8DDB2C5832FA005D1BCB /* ExpensesListView.swift in Sources */,
 				BAABA2E52C52C5D4007CBBD7 /* PlusButtonView.swift in Sources */,
 				BAABA2D32C501C3F007CBBD7 /* ChillBillApp.swift in Sources */,
 				BA3A8DD52C582B8D005D1BCB /* ExpenseSectionView.swift in Sources */,
