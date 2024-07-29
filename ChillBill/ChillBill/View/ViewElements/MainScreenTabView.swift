@@ -20,7 +20,7 @@ struct MainScreenTabView: View {
             .padding()
             
             if selectedTab == .expenses {
-                CostsView()
+                ExpensesView()
             } else {
                 BalanceView()
             }
@@ -40,11 +40,9 @@ struct MainScreenTabView: View {
         case balance
     }
     
-    private struct CostsView: View {
+    private struct ExpensesView: View {
         var body: some View {
-            Text("Expenses View")
-                .font(.largeTitle)
-                .padding()
+            ExpensesListView()
         }
     }
     
