@@ -8,7 +8,7 @@ struct MainScreenView: View {
             Text(boardName)
                 .font(.largeTitle)
                 .padding()
-
+            
             Image(systemName: "house.circle.fill")
                 .foregroundColor(.appOrange)
                 .font(.system(size: 70))
@@ -18,15 +18,16 @@ struct MainScreenView: View {
                 MainScreenTabView()
             }
             .font(.title2)
-            
-            PlusButtonView(action: {})
-            Text(addButtonDescription)
-                .font(.footnote)
-                .foregroundColor(.gray)
         }
-        Spacer()
+        .overlay(alignment: .bottom) {
+            VStack {
+                PlusButtonView(action: {})
+                Text(addButtonDescription)
+                    .font(.footnote)
+                    .foregroundColor(.gray)
+            }
+        }
     }
-    
     //MARK: - Private interface
     private var boardName = "Toronto trip"
     private let addButtonDescription = "Add expense"
