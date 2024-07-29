@@ -11,6 +11,10 @@
 		BAABA2D52C501C3F007CBBD7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAABA2D42C501C3F007CBBD7 /* ContentView.swift */; };
 		BAABA2D72C501C40007CBBD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAABA2D62C501C40007CBBD7 /* Assets.xcassets */; };
 		BAABA2DA2C501C40007CBBD7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAABA2D92C501C40007CBBD7 /* Preview Assets.xcassets */; };
+		BAABA2E22C52C385007CBBD7 /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAABA2E12C52C385007CBBD7 /* MainScreenView.swift */; };
+		BAABA2E52C52C5D4007CBBD7 /* PlusButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAABA2E42C52C5D4007CBBD7 /* PlusButtonView.swift */; };
+		BAABA2E72C52CA2D007CBBD7 /* MainScreenTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAABA2E62C52CA2D007CBBD7 /* MainScreenTabView.swift */; };
+		BAABA2E92C52CEFB007CBBD7 /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAABA2E82C52CEFB007CBBD7 /* CustomTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		BAABA2D42C501C3F007CBBD7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BAABA2D62C501C40007CBBD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAABA2D92C501C40007CBBD7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BAABA2E12C52C385007CBBD7 /* MainScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenView.swift; sourceTree = "<group>"; };
+		BAABA2E42C52C5D4007CBBD7 /* PlusButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusButtonView.swift; sourceTree = "<group>"; };
+		BAABA2E62C52CA2D007CBBD7 /* MainScreenTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenTabView.swift; sourceTree = "<group>"; };
+		BAABA2E82C52CEFB007CBBD7 /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +61,7 @@
 			children = (
 				BAABA2D22C501C3F007CBBD7 /* ChillBillApp.swift */,
 				BAABA2D42C501C3F007CBBD7 /* ContentView.swift */,
+				BAABA2E02C52C369007CBBD7 /* View */,
 				BAABA2D62C501C40007CBBD7 /* Assets.xcassets */,
 				BAABA2D82C501C40007CBBD7 /* Preview Content */,
 			);
@@ -65,6 +74,33 @@
 				BAABA2D92C501C40007CBBD7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BAABA2E02C52C369007CBBD7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BAABA2E12C52C385007CBBD7 /* MainScreenView.swift */,
+				BAABA2EA2C5425BB007CBBD7 /* ReusableViews */,
+				BAABA2E32C52C5B9007CBBD7 /* ViewElements */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BAABA2E32C52C5B9007CBBD7 /* ViewElements */ = {
+			isa = PBXGroup;
+			children = (
+				BAABA2E62C52CA2D007CBBD7 /* MainScreenTabView.swift */,
+				BAABA2E82C52CEFB007CBBD7 /* CustomTabView.swift */,
+			);
+			path = ViewElements;
+			sourceTree = "<group>";
+		};
+		BAABA2EA2C5425BB007CBBD7 /* ReusableViews */ = {
+			isa = PBXGroup;
+			children = (
+				BAABA2E42C52C5D4007CBBD7 /* PlusButtonView.swift */,
+			);
+			path = ReusableViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +174,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAABA2D52C501C3F007CBBD7 /* ContentView.swift in Sources */,
+				BAABA2E72C52CA2D007CBBD7 /* MainScreenTabView.swift in Sources */,
+				BAABA2E22C52C385007CBBD7 /* MainScreenView.swift in Sources */,
+				BAABA2E92C52CEFB007CBBD7 /* CustomTabView.swift in Sources */,
+				BAABA2E52C52C5D4007CBBD7 /* PlusButtonView.swift in Sources */,
 				BAABA2D32C501C3F007CBBD7 /* ChillBillApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
