@@ -16,6 +16,7 @@
 		BA3A8DDE2C59700A005D1BCB /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3A8DDD2C59700A005D1BCB /* Expense.swift */; };
 		BA5E62382C5AEAD1003168C1 /* LabelWithDatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5E62372C5AEAD1003168C1 /* LabelWithDatePickerView.swift */; };
 		BA5E623A2C5AEC04003168C1 /* LabelWithTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5E62392C5AEC04003168C1 /* LabelWithTextFieldView.swift */; };
+		BA5E623C2C5AEF6D003168C1 /* OrangeRoundedRectangleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5E623B2C5AEF6C003168C1 /* OrangeRoundedRectangleButton.swift */; };
 		BAABA2D32C501C3F007CBBD7 /* ChillBillApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAABA2D22C501C3F007CBBD7 /* ChillBillApp.swift */; };
 		BAABA2D52C501C3F007CBBD7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAABA2D42C501C3F007CBBD7 /* ContentView.swift */; };
 		BAABA2D72C501C40007CBBD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAABA2D62C501C40007CBBD7 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 		BA3A8DDD2C59700A005D1BCB /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Expense.swift; path = ../../../../../../Documents/Expense.swift; sourceTree = "<group>"; };
 		BA5E62372C5AEAD1003168C1 /* LabelWithDatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelWithDatePickerView.swift; sourceTree = "<group>"; };
 		BA5E62392C5AEC04003168C1 /* LabelWithTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelWithTextFieldView.swift; sourceTree = "<group>"; };
+		BA5E623B2C5AEF6C003168C1 /* OrangeRoundedRectangleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrangeRoundedRectangleButton.swift; sourceTree = "<group>"; };
 		BAABA2CF2C501C3F007CBBD7 /* ChillBill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChillBill.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAABA2D22C501C3F007CBBD7 /* ChillBillApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChillBillApp.swift; sourceTree = "<group>"; };
 		BAABA2D42C501C3F007CBBD7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				BAABA2E42C52C5D4007CBBD7 /* PlusButtonView.swift */,
+				BA5E623B2C5AEF6C003168C1 /* OrangeRoundedRectangleButton.swift */,
 			);
 			path = ReusableViews;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 				BA3A8DCC2C57FFAC005D1BCB /* DummySectionViewModel.swift in Sources */,
 				BAABA2E92C52CEFB007CBBD7 /* CustomTabView.swift in Sources */,
 				BA3A8DDB2C5832FA005D1BCB /* ExpensesListView.swift in Sources */,
+				BA5E623C2C5AEF6D003168C1 /* OrangeRoundedRectangleButton.swift in Sources */,
 				BAB6FE7D2C5A9BD7000BE63C /* NewExpenseModalView.swift in Sources */,
 				BAABA2E52C52C5D4007CBBD7 /* PlusButtonView.swift in Sources */,
 				BAABA2D32C501C3F007CBBD7 /* ChillBillApp.swift in Sources */,
