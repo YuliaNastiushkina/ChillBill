@@ -1,22 +1,45 @@
 import SwiftUI
 
 struct NewExpenseModalView: View {
-    @State private var title = ""
-    @State private var amount = ""
-    @State private var paidBy = ""
-    private let spaceBetweenTextFields: CGFloat = 20
+    //MARK: - Internal interface
     
     var body: some View {
         VStack(spacing: spaceBetweenTextFields) {
-            TextField("Title", text: $title)
+            LabelWithTextFieldView(
+                input: $title,
+                labelText: "Title",
+                placeholderText: "What was it?",
+                keyboardType: .default
+            )
             
-            TextField("Amount", text: $amount)
+            LabelWithTextFieldView(
+                input: $amount,
+                labelText: "Amount",
+                placeholderText: "0.0",
+                keyboardType: .decimalPad
+            )
             
-            TextField("Paid by", text: $paidBy)
+            LabelWithTextFieldView(
+                input: $paidBy,
+                labelText: "Paid by:",
+                placeholderText: "Who paid the bill?",
+                keyboardType: .default
+            )
+            
+            LabelWithDatePickerView(date: $date, labelText: "Date")
             
             Spacer()
         }
+        .padding()
     }
+    
+    //MARK: - Private inteface
+    
+    @State private var title = ""
+    @State private var amount = ""
+    @State private var paidBy = ""
+    @State private var date = Date()
+    private let spaceBetweenTextFields: CGFloat = 20
 }
 
 #Preview {
