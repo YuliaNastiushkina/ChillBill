@@ -22,6 +22,7 @@
 		BAABA2E52C52C5D4007CBBD7 /* PlusButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAABA2E42C52C5D4007CBBD7 /* PlusButtonView.swift */; };
 		BAABA2E72C52CA2D007CBBD7 /* CustomTabInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAABA2E62C52CA2D007CBBD7 /* CustomTabInfoView.swift */; };
 		BAABA2E92C52CEFB007CBBD7 /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAABA2E82C52CEFB007CBBD7 /* CustomTabView.swift */; };
+		BAB6FE7D2C5A9BD7000BE63C /* NewExpenseModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB6FE7C2C5A9BD7000BE63C /* NewExpenseModalView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		BAABA2E42C52C5D4007CBBD7 /* PlusButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusButtonView.swift; sourceTree = "<group>"; };
 		BAABA2E62C52CA2D007CBBD7 /* CustomTabInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabInfoView.swift; sourceTree = "<group>"; };
 		BAABA2E82C52CEFB007CBBD7 /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
+		BAB6FE7C2C5A9BD7000BE63C /* NewExpenseModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewExpenseModalView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				BA3A8DD02C582964005D1BCB /* ExpensesRowView.swift */,
 				BA3A8DD42C582B8D005D1BCB /* ExpenseSectionView.swift */,
 				BA3A8DDA2C5832FA005D1BCB /* ExpensesListView.swift */,
+				BAB6FE7C2C5A9BD7000BE63C /* NewExpenseModalView.swift */,
 			);
 			path = ExpensesView;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 				BA3A8DCC2C57FFAC005D1BCB /* DummySectionViewModel.swift in Sources */,
 				BAABA2E92C52CEFB007CBBD7 /* CustomTabView.swift in Sources */,
 				BA3A8DDB2C5832FA005D1BCB /* ExpensesListView.swift in Sources */,
+				BAB6FE7D2C5A9BD7000BE63C /* NewExpenseModalView.swift in Sources */,
 				BAABA2E52C52C5D4007CBBD7 /* PlusButtonView.swift in Sources */,
 				BAABA2D32C501C3F007CBBD7 /* ChillBillApp.swift in Sources */,
 				BA3A8DD52C582B8D005D1BCB /* ExpenseSectionView.swift in Sources */,
