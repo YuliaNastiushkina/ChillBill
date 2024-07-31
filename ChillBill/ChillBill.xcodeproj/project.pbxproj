@@ -23,6 +23,7 @@
 		BAABA2E72C52CA2D007CBBD7 /* CustomTabInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAABA2E62C52CA2D007CBBD7 /* CustomTabInfoView.swift */; };
 		BAABA2E92C52CEFB007CBBD7 /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAABA2E82C52CEFB007CBBD7 /* CustomTabView.swift */; };
 		BAB6FE7D2C5A9BD7000BE63C /* NewExpenseModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB6FE7C2C5A9BD7000BE63C /* NewExpenseModalView.swift */; };
+		BAB6FE802C5AA36B000BE63C /* CustomTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB6FE7F2C5AA36B000BE63C /* CustomTextFieldStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		BAABA2E62C52CA2D007CBBD7 /* CustomTabInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabInfoView.swift; sourceTree = "<group>"; };
 		BAABA2E82C52CEFB007CBBD7 /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
 		BAB6FE7C2C5A9BD7000BE63C /* NewExpenseModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewExpenseModalView.swift; sourceTree = "<group>"; };
+		BAB6FE7F2C5AA36B000BE63C /* CustomTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 				BAABA2E12C52C385007CBBD7 /* MainScreenView.swift */,
 				BA3A8DCF2C5828FB005D1BCB /* ExpensesView */,
 				BAABA2EA2C5425BB007CBBD7 /* ReusableViews */,
+				BAB6FE7E2C5AA33C000BE63C /* TextFieldStyle */,
 				BAABA2E32C52C5B9007CBBD7 /* MainScreenCustomTab */,
 			);
 			path = View;
@@ -149,6 +152,14 @@
 				BAABA2E42C52C5D4007CBBD7 /* PlusButtonView.swift */,
 			);
 			path = ReusableViews;
+			sourceTree = "<group>";
+		};
+		BAB6FE7E2C5AA33C000BE63C /* TextFieldStyle */ = {
+			isa = PBXGroup;
+			children = (
+				BAB6FE7F2C5AA36B000BE63C /* CustomTextFieldStyle.swift */,
+			);
+			path = TextFieldStyle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +246,7 @@
 				BA3A8DD52C582B8D005D1BCB /* ExpenseSectionView.swift in Sources */,
 				BA3A8DDE2C59700A005D1BCB /* Expense.swift in Sources */,
 				BA3A8DCA2C57FD4B005D1BCB /* DummyExpenseViewModel.swift in Sources */,
+				BAB6FE802C5AA36B000BE63C /* CustomTextFieldStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
