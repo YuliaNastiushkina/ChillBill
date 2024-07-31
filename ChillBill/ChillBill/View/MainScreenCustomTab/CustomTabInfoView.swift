@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct MainScreenTabView: View {
+struct CustomTabInfoView: View {
     
     // MARK: - Internal interface
     var body: some View {
@@ -56,5 +56,5 @@ struct MainScreenTabView: View {
 }
 
 #Preview {
-    MainScreenTabView()
+    CustomTabInfoView()
 }

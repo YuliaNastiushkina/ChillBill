@@ -20,7 +20,7 @@
 		BAABA2DA2C501C40007CBBD7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAABA2D92C501C40007CBBD7 /* Preview Assets.xcassets */; };
 		BAABA2E22C52C385007CBBD7 /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAABA2E12C52C385007CBBD7 /* MainScreenView.swift */; };
 		BAABA2E52C52C5D4007CBBD7 /* PlusButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAABA2E42C52C5D4007CBBD7 /* PlusButtonView.swift */; };
-		BAABA2E72C52CA2D007CBBD7 /* MainScreenTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAABA2E62C52CA2D007CBBD7 /* MainScreenTabView.swift */; };
+		BAABA2E72C52CA2D007CBBD7 /* CustomTabInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAABA2E62C52CA2D007CBBD7 /* CustomTabInfoView.swift */; };
 		BAABA2E92C52CEFB007CBBD7 /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAABA2E82C52CEFB007CBBD7 /* CustomTabView.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,7 +39,7 @@
 		BAABA2D92C501C40007CBBD7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BAABA2E12C52C385007CBBD7 /* MainScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenView.swift; sourceTree = "<group>"; };
 		BAABA2E42C52C5D4007CBBD7 /* PlusButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusButtonView.swift; sourceTree = "<group>"; };
-		BAABA2E62C52CA2D007CBBD7 /* MainScreenTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenTabView.swift; sourceTree = "<group>"; };
+		BAABA2E62C52CA2D007CBBD7 /* CustomTabInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabInfoView.swift; sourceTree = "<group>"; };
 		BAABA2E82C52CEFB007CBBD7 /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,10 +101,10 @@
 		BAABA2D12C501C3F007CBBD7 /* ChillBill */ = {
 			isa = PBXGroup;
 			children = (
-				BA3A8DDC2C596FF5005D1BCB /* Model */,
-				BA3A8DC82C57FD20005D1BCB /* ViewModel */,
 				BAABA2D22C501C3F007CBBD7 /* ChillBillApp.swift */,
 				BAABA2D42C501C3F007CBBD7 /* ContentView.swift */,
+				BA3A8DDC2C596FF5005D1BCB /* Model */,
+				BA3A8DC82C57FD20005D1BCB /* ViewModel */,
 				BAABA2E02C52C369007CBBD7 /* View */,
 				BAABA2D62C501C40007CBBD7 /* Assets.xcassets */,
 				BAABA2D82C501C40007CBBD7 /* Preview Content */,
@@ -123,21 +123,21 @@
 		BAABA2E02C52C369007CBBD7 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				BA3A8DCF2C5828FB005D1BCB /* ExpensesView */,
 				BAABA2E12C52C385007CBBD7 /* MainScreenView.swift */,
+				BA3A8DCF2C5828FB005D1BCB /* ExpensesView */,
 				BAABA2EA2C5425BB007CBBD7 /* ReusableViews */,
-				BAABA2E32C52C5B9007CBBD7 /* ViewElements */,
+				BAABA2E32C52C5B9007CBBD7 /* MainScreenCustomTab */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		BAABA2E32C52C5B9007CBBD7 /* ViewElements */ = {
+		BAABA2E32C52C5B9007CBBD7 /* MainScreenCustomTab */ = {
 			isa = PBXGroup;
 			children = (
-				BAABA2E62C52CA2D007CBBD7 /* MainScreenTabView.swift */,
+				BAABA2E62C52CA2D007CBBD7 /* CustomTabInfoView.swift */,
 				BAABA2E82C52CEFB007CBBD7 /* CustomTabView.swift */,
 			);
-			path = ViewElements;
+			path = MainScreenCustomTab;
 			sourceTree = "<group>";
 		};
 		BAABA2EA2C5425BB007CBBD7 /* ReusableViews */ = {
@@ -220,7 +220,7 @@
 			files = (
 				BA3A8DCE2C580177005D1BCB /* DummyExpensesListViewModel.swift in Sources */,
 				BAABA2D52C501C3F007CBBD7 /* ContentView.swift in Sources */,
-				BAABA2E72C52CA2D007CBBD7 /* MainScreenTabView.swift in Sources */,
+				BAABA2E72C52CA2D007CBBD7 /* CustomTabInfoView.swift in Sources */,
 				BAABA2E22C52C385007CBBD7 /* MainScreenView.swift in Sources */,
 				BA3A8DD12C582964005D1BCB /* ExpensesRowView.swift in Sources */,
 				BA3A8DCC2C57FFAC005D1BCB /* DummySectionViewModel.swift in Sources */,

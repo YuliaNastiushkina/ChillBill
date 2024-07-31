@@ -15,7 +15,7 @@ struct MainScreenView: View {
                 .padding()
             
             HStack {
-                MainScreenTabView()
+                CustomTabInfoView()
             }
             .font(.title2)
         }
