@@ -29,6 +29,9 @@ struct NewExpenseModalView: View {
             LabelWithDatePickerView(date: $date, labelText: "Date")
             
             Spacer()
+            
+            Button("Add", action: {})
+                .buttonStyle(OrangeRoundedRectangleButton())
         }
         .padding()
     }
