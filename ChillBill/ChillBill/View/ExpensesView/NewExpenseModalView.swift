@@ -1,5 +1,6 @@
 import SwiftUI
 
+/// The view 
 struct NewExpenseModalView: View {
     //MARK: - Internal interface
     
