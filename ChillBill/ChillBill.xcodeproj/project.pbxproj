@@ -16,6 +16,7 @@
 		BA5E62382C5AEAD1003168C1 /* LabelWithDatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5E62372C5AEAD1003168C1 /* LabelWithDatePickerView.swift */; };
 		BA5E623A2C5AEC04003168C1 /* LabelWithTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5E62392C5AEC04003168C1 /* LabelWithTextFieldView.swift */; };
 		BA5E623C2C5AEF6D003168C1 /* OrangeRoundedRectangleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5E623B2C5AEF6C003168C1 /* OrangeRoundedRectangleButton.swift */; };
+		BA89E55A2C6AA1D000AE0FD0 /* ExpensesRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA89E5592C6AA1D000AE0FD0 /* ExpensesRowView.swift */; };
 		BAABA2D32C501C3F007CBBD7 /* ChillBillApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAABA2D22C501C3F007CBBD7 /* ChillBillApp.swift */; };
 		BAABA2D52C501C3F007CBBD7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAABA2D42C501C3F007CBBD7 /* ContentView.swift */; };
 		BAABA2D72C501C40007CBBD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAABA2D62C501C40007CBBD7 /* Assets.xcassets */; };
@@ -39,6 +40,7 @@
 		BA5E62372C5AEAD1003168C1 /* LabelWithDatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelWithDatePickerView.swift; sourceTree = "<group>"; };
 		BA5E62392C5AEC04003168C1 /* LabelWithTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelWithTextFieldView.swift; sourceTree = "<group>"; };
 		BA5E623B2C5AEF6C003168C1 /* OrangeRoundedRectangleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrangeRoundedRectangleButton.swift; sourceTree = "<group>"; };
+		BA89E5592C6AA1D000AE0FD0 /* ExpensesRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesRowView.swift; sourceTree = "<group>"; };
 		BAABA2CF2C501C3F007CBBD7 /* ChillBill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChillBill.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAABA2D22C501C3F007CBBD7 /* ChillBillApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChillBillApp.swift; sourceTree = "<group>"; };
 		BAABA2D42C501C3F007CBBD7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 		BA3A8DCF2C5828FB005D1BCB /* ExpensesView */ = {
 			isa = PBXGroup;
 			children = (
+				BA89E5592C6AA1D000AE0FD0 /* ExpensesRowView.swift */,
 				BA5E62362C5AEABB003168C1 /* Subviews */,
 				BA3A8DD02C582964005D1BCB /* ExpensesRowView.swift */,
 				BA3A8DD42C582B8D005D1BCB /* ExpenseSectionView.swift */,
@@ -266,6 +269,7 @@
 				BA5E62382C5AEAD1003168C1 /* LabelWithDatePickerView.swift in Sources */,
 				BA3A8DD52C582B8D005D1BCB /* ExpenseSectionView.swift in Sources */,
 				BA3A8DCA2C57FD4B005D1BCB /* DummyExpenseViewModel.swift in Sources */,
+				BA89E55A2C6AA1D000AE0FD0 /* ExpensesRowView.swift in Sources */,
 				BAB6FE802C5AA36B000BE63C /* CustomTextFieldStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
