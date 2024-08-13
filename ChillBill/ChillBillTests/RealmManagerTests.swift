@@ -28,4 +28,19 @@ final class RealmManagerTests: XCTestCase {
     func testRealmInitialization() throws {
         XCTAssertNoThrow(try Realm())
     }
+    
+    func testFunctionIsRealmInitializedReturnTrueWhenTheRealmIsInitialized() throws {
+        XCTAssertTrue(realmManager.isRealmInitialized())
+    }
+    
+    func testRealmInitializationFailsWithInvalidConfiguration() throws {
+        let invalidConfiguration = Realm.Configuration(fileURL: URL(fileURLWithPath: "/dev/null"))
+        
+        do {
+            _ = try Realm(configuration: invalidConfiguration)
+            XCTFail()
+        } catch {
+            XCTAssertNotNil(error)
+        }
+    }
 }
