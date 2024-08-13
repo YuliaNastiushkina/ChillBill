@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		BA0E6EE02C6BB68A005823FD /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BA0E6EDF2C6BB68A005823FD /* RealmSwift */; };
 		BA0E6EE32C6BB6BF005823FD /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0E6EE22C6BB6BF005823FD /* RealmManager.swift */; };
+		BA0E6EEE2C6BB8EE005823FD /* ChillBillTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0E6EED2C6BB8EE005823FD /* ChillBillTests.swift */; };
 		BA3A8DCA2C57FD4B005D1BCB /* DummyExpenseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3A8DC92C57FD4B005D1BCB /* DummyExpenseViewModel.swift */; };
 		BA3A8DCC2C57FFAC005D1BCB /* DummySectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3A8DCB2C57FFAC005D1BCB /* DummySectionViewModel.swift */; };
 		BA3A8DCE2C580177005D1BCB /* DummyExpensesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3A8DCD2C580177005D1BCB /* DummyExpensesListViewModel.swift */; };
@@ -31,8 +32,20 @@
 		BACC12B82C63D1E700F3B31A /* ExpenseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACC12B72C63D1E700F3B31A /* ExpenseModel.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		BA0E6EEF2C6BB8EE005823FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BAABA2C72C501C3F007CBBD7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BAABA2CE2C501C3F007CBBD7;
+			remoteInfo = ChillBill;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		BA0E6EE22C6BB6BF005823FD /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		BA0E6EEB2C6BB8EE005823FD /* ChillBillTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChillBillTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA0E6EED2C6BB8EE005823FD /* ChillBillTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChillBillTests.swift; sourceTree = "<group>"; };
 		BA3A8DC92C57FD4B005D1BCB /* DummyExpenseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyExpenseViewModel.swift; sourceTree = "<group>"; };
 		BA3A8DCB2C57FFAC005D1BCB /* DummySectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummySectionViewModel.swift; sourceTree = "<group>"; };
 		BA3A8DCD2C580177005D1BCB /* DummyExpensesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyExpensesListViewModel.swift; sourceTree = "<group>"; };
@@ -57,6 +70,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		BA0E6EE82C6BB8EE005823FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BAABA2CC2C501C3F007CBBD7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -74,6 +94,14 @@
 				BA0E6EE22C6BB6BF005823FD /* RealmManager.swift */,
 			);
 			path = Realm;
+			sourceTree = "<group>";
+		};
+		BA0E6EEC2C6BB8EE005823FD /* ChillBillTests */ = {
+			isa = PBXGroup;
+			children = (
+				BA0E6EED2C6BB8EE005823FD /* ChillBillTests.swift */,
+			);
+			path = ChillBillTests;
 			sourceTree = "<group>";
 		};
 		BA3A8DC82C57FD20005D1BCB /* ViewModel */ = {
@@ -111,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				BAABA2D12C501C3F007CBBD7 /* ChillBill */,
+				BA0E6EEC2C6BB8EE005823FD /* ChillBillTests */,
 				BAABA2D02C501C3F007CBBD7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -119,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				BAABA2CF2C501C3F007CBBD7 /* ChillBill.app */,
+				BA0E6EEB2C6BB8EE005823FD /* ChillBillTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -195,6 +225,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		BA0E6EEA2C6BB8EE005823FD /* ChillBillTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA0E6EF12C6BB8EE005823FD /* Build configuration list for PBXNativeTarget "ChillBillTests" */;
+			buildPhases = (
+				BA0E6EE72C6BB8EE005823FD /* Sources */,
+				BA0E6EE82C6BB8EE005823FD /* Frameworks */,
+				BA0E6EE92C6BB8EE005823FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA0E6EF02C6BB8EE005823FD /* PBXTargetDependency */,
+			);
+			name = ChillBillTests;
+			productName = ChillBillTests;
+			productReference = BA0E6EEB2C6BB8EE005823FD /* ChillBillTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		BAABA2CE2C501C3F007CBBD7 /* ChillBill */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BAABA2DD2C501C40007CBBD7 /* Build configuration list for PBXNativeTarget "ChillBill" */;
@@ -225,6 +273,10 @@
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
+					BA0E6EEA2C6BB8EE005823FD = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = BAABA2CE2C501C3F007CBBD7;
+					};
 					BAABA2CE2C501C3F007CBBD7 = {
 						CreatedOnToolsVersion = 15.4;
 					};
@@ -247,11 +299,19 @@
 			projectRoot = "";
 			targets = (
 				BAABA2CE2C501C3F007CBBD7 /* ChillBill */,
+				BA0E6EEA2C6BB8EE005823FD /* ChillBillTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		BA0E6EE92C6BB8EE005823FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BAABA2CD2C501C3F007CBBD7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -264,6 +324,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		BA0E6EE72C6BB8EE005823FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA0E6EEE2C6BB8EE005823FD /* ChillBillTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BAABA2CB2C501C3F007CBBD7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -292,7 +360,51 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		BA0E6EF02C6BB8EE005823FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BAABA2CE2C501C3F007CBBD7 /* ChillBill */;
+			targetProxy = BA0E6EEF2C6BB8EE005823FD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		BA0E6EF22C6BB8EE005823FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5W2A88B7UL;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.y.nastiushkina.ChillBillTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChillBill.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ChillBill";
+			};
+			name = Debug;
+		};
+		BA0E6EF32C6BB8EE005823FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5W2A88B7UL;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.y.nastiushkina.ChillBillTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChillBill.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ChillBill";
+			};
+			name = Release;
+		};
 		BAABA2DB2C501C40007CBBD7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -477,6 +589,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BA0E6EF12C6BB8EE005823FD /* Build configuration list for PBXNativeTarget "ChillBillTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA0E6EF22C6BB8EE005823FD /* Debug */,
+				BA0E6EF32C6BB8EE005823FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BAABA2CA2C501C3F007CBBD7 /* Build configuration list for PBXProject "ChillBill" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
