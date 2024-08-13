@@ -9,7 +9,10 @@
 /* Begin PBXBuildFile section */
 		BA0E6EE02C6BB68A005823FD /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BA0E6EDF2C6BB68A005823FD /* RealmSwift */; };
 		BA0E6EE32C6BB6BF005823FD /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0E6EE22C6BB6BF005823FD /* RealmManager.swift */; };
-		BA0E6EEE2C6BB8EE005823FD /* ChillBillTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0E6EED2C6BB8EE005823FD /* ChillBillTests.swift */; };
+		BA0E6EF52C6BB96C005823FD /* RealmManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0E6EF42C6BB96C005823FD /* RealmManagerTests.swift */; };
+		BA0E6EF62C6BBB13005823FD /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0E6EE22C6BB6BF005823FD /* RealmManager.swift */; };
+		BA0E6EFB2C6BC4C1005823FD /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BA0E6EFA2C6BC4C1005823FD /* RealmSwift */; };
+		BA0E6EFD2C6BC4C1005823FD /* RealmSwift in Embed Frameworks */ = {isa = PBXBuildFile; productRef = BA0E6EFA2C6BC4C1005823FD /* RealmSwift */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		BA3A8DCA2C57FD4B005D1BCB /* DummyExpenseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3A8DC92C57FD4B005D1BCB /* DummyExpenseViewModel.swift */; };
 		BA3A8DCC2C57FFAC005D1BCB /* DummySectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3A8DCB2C57FFAC005D1BCB /* DummySectionViewModel.swift */; };
 		BA3A8DCE2C580177005D1BCB /* DummyExpensesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3A8DCD2C580177005D1BCB /* DummyExpensesListViewModel.swift */; };
@@ -42,10 +45,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		BA0E6EFC2C6BC4C1005823FD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BA0E6EFD2C6BC4C1005823FD /* RealmSwift in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		BA0E6EE22C6BB6BF005823FD /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 		BA0E6EEB2C6BB8EE005823FD /* ChillBillTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChillBillTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA0E6EED2C6BB8EE005823FD /* ChillBillTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChillBillTests.swift; sourceTree = "<group>"; };
+		BA0E6EF42C6BB96C005823FD /* RealmManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManagerTests.swift; sourceTree = "<group>"; };
 		BA3A8DC92C57FD4B005D1BCB /* DummyExpenseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyExpenseViewModel.swift; sourceTree = "<group>"; };
 		BA3A8DCB2C57FFAC005D1BCB /* DummySectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummySectionViewModel.swift; sourceTree = "<group>"; };
 		BA3A8DCD2C580177005D1BCB /* DummyExpensesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyExpensesListViewModel.swift; sourceTree = "<group>"; };
@@ -74,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA0E6EFB2C6BC4C1005823FD /* RealmSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,9 +117,16 @@
 		BA0E6EEC2C6BB8EE005823FD /* ChillBillTests */ = {
 			isa = PBXGroup;
 			children = (
-				BA0E6EED2C6BB8EE005823FD /* ChillBillTests.swift */,
+				BA0E6EF42C6BB96C005823FD /* RealmManagerTests.swift */,
 			);
 			path = ChillBillTests;
+			sourceTree = "<group>";
+		};
+		BA0E6EF92C6BC4C1005823FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		BA3A8DC82C57FD20005D1BCB /* ViewModel */ = {
@@ -141,6 +166,7 @@
 				BAABA2D12C501C3F007CBBD7 /* ChillBill */,
 				BA0E6EEC2C6BB8EE005823FD /* ChillBillTests */,
 				BAABA2D02C501C3F007CBBD7 /* Products */,
+				BA0E6EF92C6BC4C1005823FD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -232,6 +258,7 @@
 				BA0E6EE72C6BB8EE005823FD /* Sources */,
 				BA0E6EE82C6BB8EE005823FD /* Frameworks */,
 				BA0E6EE92C6BB8EE005823FD /* Resources */,
+				BA0E6EFC2C6BC4C1005823FD /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -239,6 +266,9 @@
 				BA0E6EF02C6BB8EE005823FD /* PBXTargetDependency */,
 			);
 			name = ChillBillTests;
+			packageProductDependencies = (
+				BA0E6EFA2C6BC4C1005823FD /* RealmSwift */,
+			);
 			productName = ChillBillTests;
 			productReference = BA0E6EEB2C6BB8EE005823FD /* ChillBillTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -275,6 +305,7 @@
 				TargetAttributes = {
 					BA0E6EEA2C6BB8EE005823FD = {
 						CreatedOnToolsVersion = 15.4;
+						LastSwiftMigration = 1540;
 						TestTargetID = BAABA2CE2C501C3F007CBBD7;
 					};
 					BAABA2CE2C501C3F007CBBD7 = {
@@ -328,7 +359,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA0E6EEE2C6BB8EE005823FD /* ChillBillTests.swift in Sources */,
+				BA0E6EF52C6BB96C005823FD /* RealmManagerTests.swift in Sources */,
+				BA0E6EF62C6BBB13005823FD /* RealmManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +405,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5W2A88B7UL;
@@ -381,6 +414,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.y.nastiushkina.ChillBillTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChillBill.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ChillBill";
@@ -391,6 +425,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5W2A88B7UL;
@@ -631,6 +666,11 @@
 
 /* Begin XCSwiftPackageProductDependency section */
 		BA0E6EDF2C6BB68A005823FD /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA0E6EDE2C6BB68A005823FD /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		BA0E6EFA2C6BC4C1005823FD /* RealmSwift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = BA0E6EDE2C6BB68A005823FD /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = RealmSwift;
