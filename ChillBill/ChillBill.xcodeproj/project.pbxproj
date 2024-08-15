@@ -14,6 +14,7 @@
 		BA0E6EFB2C6BC4C1005823FD /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BA0E6EFA2C6BC4C1005823FD /* RealmSwift */; };
 		BA0E6EFD2C6BC4C1005823FD /* RealmSwift in Embed Frameworks */ = {isa = PBXBuildFile; productRef = BA0E6EFA2C6BC4C1005823FD /* RealmSwift */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		BA2EEAC92C6E6A950062993A /* RealmError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2EEAC82C6E6A950062993A /* RealmError.swift */; };
+		BA2EEACA2C6E6F6F0062993A /* RealmError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2EEAC82C6E6A950062993A /* RealmError.swift */; };
 		BA3A8DCA2C57FD4B005D1BCB /* DummyExpenseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3A8DC92C57FD4B005D1BCB /* DummyExpenseViewModel.swift */; };
 		BA3A8DCC2C57FFAC005D1BCB /* DummySectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3A8DCB2C57FFAC005D1BCB /* DummySectionViewModel.swift */; };
 		BA3A8DCE2C580177005D1BCB /* DummyExpensesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3A8DCD2C580177005D1BCB /* DummyExpensesListViewModel.swift */; };
@@ -375,6 +376,7 @@
 			files = (
 				BA0E6EF52C6BB96C005823FD /* RealmManagerTests.swift in Sources */,
 				BAC794B52C6D15FC00C9A208 /* RealmManagerTestObject.swift in Sources */,
+				BA2EEACA2C6E6F6F0062993A /* RealmError.swift in Sources */,
 				BA0E6EF62C6BBB13005823FD /* RealmManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -21,14 +21,16 @@ final class RealmManagerTests: XCTestCase {
         XCTAssertNotNil(realmManager.realm)
     }
     
-    func testRealmInitializationFailsWithInvalidConfiguration() throws {
+    func testRealmInitializerThrowsTheErrorWhenInitializationFailsWithInvalidConfiguration() throws {
         let invalidConfiguration = Realm.Configuration(fileURL: URL(fileURLWithPath: "/dev/null"))
         
-        do {
-            _ = try Realm(configuration: invalidConfiguration)
-            XCTFail()
-        } catch {
-            XCTAssertNotNil(error)
+        XCTAssertThrowsError(try RealmManager(configuration: invalidConfiguration)) { error in
+            XCTAssertTrue(error is RealmError)
+            if case RealmError.initializationFailed(let reason) = error {
+                XCTAssertTrue(reason.contains("Operation not permitted"), "Unexpected error reason: \(reason)")
+            } else {
+                XCTFail("Unexpected error type: \(error)")
+            }
         }
     }
     
@@ -42,35 +44,13 @@ final class RealmManagerTests: XCTestCase {
         XCTAssertEqual(fetchedObject?.name, "Test")
     }
     
-    func testAddObjectDoesNotAddObjectIfRealmInitializedWithInvalidConfiguration() throws {
-        let invalidConfiguration = Realm.Configuration(fileURL: URL(fileURLWithPath: "/dev/null"))
-        let faultyRealmManager = try RealmManager(configuration: invalidConfiguration)
-        
-        let testObject = TestObject(id: "1", name: "Test")
-        
-        try faultyRealmManager.addObject(testObject)
-        
-        XCTAssertNil(faultyRealmManager.realm?.object(ofType: TestObject.self, forPrimaryKey: "1"))
-    }
-    
-    func testfetchObjectsReturnsEmptyArrayWhenRealmInitializationFails() throws {
-        let invalidConfiguration = Realm.Configuration(fileURL: URL(fileURLWithPath: "/dev/null"))
-        let faultyRealmManager = try RealmManager(configuration: invalidConfiguration)
-        
-        let testObject = TestObject(id: "1", name: "Test")
-        
-        try faultyRealmManager.addObject(testObject)
-        let fetchedObjects = try faultyRealmManager.fetchObjects(ofType: TestObject.self)
-        XCTAssertEqual(fetchedObjects, [])
-    }
-    
-    func testfetchObjectsReturnsEmptyArrayWhenTheDatabaseIsEmpty() throws {
+    func testfetchObjectsReturnsEmptyArrayWhenWhenNoObjectsExist() throws {
         let fetchedObjects = try realmManager.fetchObjects(ofType: TestObject.self)
         
-        XCTAssertEqual(fetchedObjects, [])
+        XCTAssertTrue(fetchedObjects.isEmpty)
     }
     
-    func testfetchObjectsReturnsAllObjectsFromTheDataBase() throws {
+    func testfetchObjectsSuccessfullyFetchesObjectsFromTheDataBase() throws {
         let testObject = TestObject(id: "1", name: "Test")
         let secondTestObject = TestObject(id: "2", name: "Test2")
         
@@ -88,32 +68,21 @@ final class RealmManagerTests: XCTestCase {
         try realmManager.deleteObject(testObject)
         
         let fetchedObjects = try realmManager.fetchObjects(ofType: TestObject.self)
-        XCTAssertEqual(fetchedObjects.count, 0)
+        XCTAssertTrue(fetchedObjects.isEmpty)
     }
     
-    func testDeleteObjectDoesNotCauseIssuesWhenTryingToDeleteNonExistentObject() throws {
+    func testDeleteObjectThrowsErrorIfObjectIsInvalidated() throws {
         let testObject = TestObject(id: "1", name: "Test")
         try realmManager.addObject(testObject)
         
-        let fetchedObject = try realmManager.fetchObjects(ofType: TestObject.self).first
-        
-        if let fetchedObject = fetchedObject {
-            try realmManager.deleteObject(fetchedObject)
-        }
         try realmManager.deleteObject(testObject)
-        
-        let remainingObjects = try realmManager.fetchObjects(ofType: TestObject.self)
-        XCTAssertEqual(remainingObjects.count, 0)
-    }
-    
-    func testDeleteObjectDoesNotCauseIssuesWhenRealmInitializationFails() throws {
-        let invalidConfiguration = Realm.Configuration(fileURL: URL(fileURLWithPath: "/dev/null"))
-        let faultyRealmManager = try RealmManager(configuration: invalidConfiguration)
-        
-        let testObject = TestObject(id: "1", name: "Test")
-        
-        try faultyRealmManager.deleteObject(testObject)
-        let fetchedObjects = try faultyRealmManager.fetchObjects(ofType: TestObject.self)
-        XCTAssertEqual(fetchedObjects.count, 0)
+        XCTAssertThrowsError(try realmManager.deleteObject(testObject)) { error in
+            XCTAssertTrue(error is RealmDeletionError)
+            if case RealmDeletionError.objectInvalidated = error {
+                XCTAssertTrue(true)
+            } else {
+                XCTFail("Unexpected error type: \(error)")
+            }
+        }
     }
 }
