@@ -32,6 +32,7 @@
 		BAABA2E92C52CEFB007CBBD7 /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAABA2E82C52CEFB007CBBD7 /* CustomTabView.swift */; };
 		BAB6FE7D2C5A9BD7000BE63C /* NewExpenseModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB6FE7C2C5A9BD7000BE63C /* NewExpenseModalView.swift */; };
 		BAB6FE802C5AA36B000BE63C /* CustomTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB6FE7F2C5AA36B000BE63C /* CustomTextFieldStyle.swift */; };
+		BAC794B52C6D15FC00C9A208 /* RealmManagerTestObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC794B42C6D15FC00C9A208 /* RealmManagerTestObject.swift */; };
 		BACC12B82C63D1E700F3B31A /* ExpenseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACC12B72C63D1E700F3B31A /* ExpenseModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +84,7 @@
 		BAABA2E82C52CEFB007CBBD7 /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
 		BAB6FE7C2C5A9BD7000BE63C /* NewExpenseModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewExpenseModalView.swift; sourceTree = "<group>"; };
 		BAB6FE7F2C5AA36B000BE63C /* CustomTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldStyle.swift; sourceTree = "<group>"; };
+		BAC794B42C6D15FC00C9A208 /* RealmManagerTestObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManagerTestObject.swift; sourceTree = "<group>"; };
 		BACC12B72C63D1E700F3B31A /* ExpenseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,7 +119,7 @@
 		BA0E6EEC2C6BB8EE005823FD /* ChillBillTests */ = {
 			isa = PBXGroup;
 			children = (
-				BA0E6EF42C6BB96C005823FD /* RealmManagerTests.swift */,
+				BAC794B22C6D131000C9A208 /* RealmManagerTests */,
 			);
 			path = ChillBillTests;
 			sourceTree = "<group>";
@@ -237,6 +239,15 @@
 				BAB6FE7F2C5AA36B000BE63C /* CustomTextFieldStyle.swift */,
 			);
 			path = TextFieldStyle;
+			sourceTree = "<group>";
+		};
+		BAC794B22C6D131000C9A208 /* RealmManagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				BA0E6EF42C6BB96C005823FD /* RealmManagerTests.swift */,
+				BAC794B42C6D15FC00C9A208 /* RealmManagerTestObject.swift */,
+			);
+			path = RealmManagerTests;
 			sourceTree = "<group>";
 		};
 		BACC12B62C63D1D700F3B31A /* Model */ = {
@@ -360,6 +371,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA0E6EF52C6BB96C005823FD /* RealmManagerTests.swift in Sources */,
+				BAC794B52C6D15FC00C9A208 /* RealmManagerTestObject.swift in Sources */,
 				BA0E6EF62C6BBB13005823FD /* RealmManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
