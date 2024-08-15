@@ -81,4 +81,39 @@ final class RealmManagerTests: XCTestCase {
         XCTAssertEqual(fetchedObjects.count, 2)
     }
     
+    func testDeleteObjectSuccessfullyRemovesObjectFromDatabase() throws {
+        let testObject = TestObject(id: "1", name: "Test")
+        
+        realmManager.addObject(testObject)
+        realmManager.deleteObject(testObject)
+        
+        let fetchedObjects = realmManager.fetchObjects(ofType: TestObject.self)
+        XCTAssertEqual(fetchedObjects.count, 0)
+    }
+    
+    func testDeleteObjectDoesNotCauseIssuesWhenTryingToDeleteNonExistentObject() throws {
+        let testObject = TestObject(id: "1", name: "Test")
+        realmManager.addObject(testObject)
+        
+        let fetchedObject = realmManager.fetchObjects(ofType: TestObject.self).first
+        
+        if let fetchedObject = fetchedObject {
+            realmManager.deleteObject(fetchedObject)
+        }
+        realmManager.deleteObject(testObject)
+        
+        let remainingObjects = realmManager.fetchObjects(ofType: TestObject.self)
+        XCTAssertEqual(remainingObjects.count, 0)
+    }
+    
+    func testDeleteObjectDoesNotCauseIssuesWhenRealmInitializationFails() throws {
+        let invalidConfiguration = Realm.Configuration(fileURL: URL(fileURLWithPath: "/dev/null"))
+        let faultyRealmManager = RealmManager(configuration: invalidConfiguration)
+        
+        let testObject = TestObject(id: "1", name: "Test")
+        
+        faultyRealmManager.deleteObject(testObject)
+        let fetchedObjects = faultyRealmManager.fetchObjects(ofType: TestObject.self)
+        XCTAssertEqual(fetchedObjects.count, 0)
+    }
 }

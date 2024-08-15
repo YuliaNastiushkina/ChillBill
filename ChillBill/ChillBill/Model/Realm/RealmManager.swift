@@ -38,6 +38,10 @@ final class RealmManager {
     /// Deletes an object from the Realm database.
     /// - Parameter object: The object to be deleted from the database.
     func deleteObject(_ object: Object) {
+        guard !object.isInvalidated else {
+            print("The object is already invalidated or does not exist.")
+            return
+        }
         write {
             realm?.delete(object)
         }
