@@ -25,6 +25,16 @@ final class RealmManager {
         }
     }
     
+    /// Retrieves all objects of the specified type from the Realm database.
+    /// - Parameter type: The type of objects to fetch from the database.
+    /// - Returns: An array of objects of the specified type, or an empty array if no objects are found or if Realm is not initialized.
+    func fetchObjects<T: Object>(ofType type: T.Type) -> [T] {
+        guard let result = realm?.objects(type) else {
+            return []
+        }
+        return Array(result)
+    }
+    
     // MARK: - Private interface
     
     private(set) var realm: Realm?
