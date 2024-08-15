@@ -35,6 +35,14 @@ final class RealmManager {
         return Array(result)
     }
     
+    /// Deletes an object from the Realm database.
+    /// - Parameter object: The object to be deleted from the database.
+    func deleteObject(_ object: Object) {
+        write {
+            realm?.delete(object)
+        }
+    }
+    
     // MARK: - Private interface
     
     private(set) var realm: Realm?
