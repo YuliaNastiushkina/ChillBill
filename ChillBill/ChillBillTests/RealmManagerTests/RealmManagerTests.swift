@@ -52,4 +52,33 @@ final class RealmManagerTests: XCTestCase {
         
         XCTAssertNil(faultyRealmManager.realm?.object(ofType: TestObject.self, forPrimaryKey: "1"))
     }
+    
+    func testfetchObjectsReturnsEmptyArrayWhenRealmInitializationFails() throws {
+        let invalidConfiguration = Realm.Configuration(fileURL: URL(fileURLWithPath: "/dev/null"))
+        let faultyRealmManager = RealmManager(configuration: invalidConfiguration)
+        
+        let testObject = TestObject(id: "1", name: "Test")
+        
+        faultyRealmManager.addObject(testObject)
+        let fetchedObjects = faultyRealmManager.fetchObjects(ofType: TestObject.self)
+        XCTAssertEqual(fetchedObjects, [])
+    }
+    
+    func testfetchObjectsReturnsEmptyArrayWhenTheDatabaseIsEmpty() throws {
+        let fetchedObjects = realmManager.fetchObjects(ofType: TestObject.self)
+        
+        XCTAssertEqual(fetchedObjects, [])
+    }
+    
+    func testfetchObjectsReturnsAllObjectsFromTheDataBase() throws {
+        let testObject = TestObject(id: "1", name: "Test")
+        let secondTestObject = TestObject(id: "2", name: "Test2")
+        
+        realmManager.addObject(testObject)
+        realmManager.addObject(secondTestObject)
+        
+        let fetchedObjects = realmManager.fetchObjects(ofType: TestObject.self)
+        XCTAssertEqual(fetchedObjects.count, 2)
+    }
+    
 }
